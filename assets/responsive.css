@@ -1,0 +1,93 @@
+@media (max-width: 1024px) {
+  #header__container {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .navbar__list li a {
+    font-size: 16px;
+  }
+
+  .us__img {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .us__img img {
+    max-width: 80%;
+  }
+
+  #container-contact {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    border: 1px solid red;
+  }
+
+  .contact-title {
+    width: 60%;
+  }
+}
+
+@media (max-width: 790px) {
+  main {
+    gap: 6rem;
+  }
+  .card {
+    width: 350px;
+  }
+
+  .navbar__list {
+    display: none;
+    position: absolute;
+    top: 80px;
+    width: 95%;
+    left: 2.5%;
+    border-top: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 0px 10px 10px;
+    -webkit-border-radius: 0px 0px 10px 10px;
+    -moz-border-radius: 0px 0px 10px 10px;
+    -ms-border-radius: 0px 0px 10px 10px;
+    -o-border-radius: 0px 0px 10px 10px;
+    padding: 1.5rem;
+    background-color: gray;
+    align-items: flex-start;
+  }
+
+  .navbar__list a {
+    font-size: 1.2rem;
+  }
+
+  .menu__label {
+    display: flex;
+    cursor: pointer;
+  }
+
+  .menu__label .fa-bars {
+    font-size: 25px;
+  }
+
+  #menu-hamburguesa:checked + .navbar__list {
+    display: flex;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .form-contact {
+    width: 100%;
+  }
+  .form-contact input,
+  .form-contact textarea {
+    width: 90%;
+  }
+}

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/index.css">
+  <link rel="stylesheet" href="./assets/animations.css">
+  <link rel="stylesheet" href="./assets/responsive.css">
+
+  <title>Ace Store</title>
+</head>
+
+
+
+<body>
+  <header id="header__container">
+    <div class="container__logo">
+      <img src="./assets/img/img_logo.png" class="img__logo">
+    </div>
+
+    <nav class="navbar__container">
+      <label for="menu-hamburguesa" class="menu__label">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+      <input type="checkbox" id="menu-hamburguesa">
+
+      <ul class="navbar__list">
+        <li><a href="">INICIO</a></li>
+        <li><a href="">NOSOTROS</a></li>
+        <li><a href="">PRODUCTOS</a></li>
+        <li><a href="">CONTACTO</a></li>
+        <li><a href="">INICIAR SESION</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!--------- HOME --------->
+    <section id="container__home">
+      <img src="./assets/img/img_home.png">
+    </section>
+
+    <!--------- US --------->
+    <section id="container__us">
+      <div>
+        <h2>Somos ACE STORE</h2>
+        <p>Encontrá lo mejor para rendir al 100% en la cancha. Contamos con gran variedad de bolsos, raquetas, paletas,
+          pelotas y más. Comercializamos las mejores marcas, con la mejor calidad del mercado. </p>
+      </div>
+      <div class="us__img">
+        <img src="./assets/img/img_us.jpg">
+        <img src="./assets/img/padel_img_us.jpg">
+      </div>
+    </section>
+
+    <!--------- PRODUCTS --------->
+    <section id="container__products">
+      <div class="products__categories">
+        <div class="container-label">
+          <input type="radio" name="filtro" id="todos" checked="yes">
+          <label for="todos">Todos</label>
+        </div>
+        <div class="container-label">
+          <input type="radio" name="filtro" id="raquetas">
+          <label for="raquetas">Raquetas</label>
+        </div>
+        <div class="container-label">
+          <input type="radio" name="filtro" id="paletas">
+          <label for="paletas">Paletas</label>
+        </div>
+        <div class="container-label">
+          <input type="radio" name="filtro" id="bolsos">
+          <label for="bolsos">Bolsos</label>
+        </div>
+        <div class="container-label">
+          <input type="radio" name="filtro" id="pelotas">
+          <label for="pelotas">Pelotas</label>
+        </div>
+      </div>
+
+      <div class="products__cards">
+
+
+        <div class="card raquetas">
+          <div class="card__img">
+            <img src="./assets/img/418-raqueta-babolat-aero-tour.jpg">
+          </div>
+
+          <div class="card__content">
+            <span>Raqueta Babolat Aero Tour</span>
+            <span>$84.000</span>
+          </div>
+
+          <div class="card__buy">
+            <input type="number" value="1">
+            <button class="btn">
+              COMPRAR
+            </button>
+          </div>
+        </div>
+
+        <div class="card raquetas">
+          <div class="card__img">
+            <img src="./assets/img/raqueta-tecnifibre-tf-x1-300-.jpg">
+          </div>
+
+          <div class="card__content">
+            <span>Raqueta Tecnifibre TF X1 300</span>
+            <span>$117.000</span>
+          </div>
+
+          <div class="card__buy">
+            <input type="number" value="1">
+            <button class="btn">
+              COMPRAR
+            </button>
+          </div>
+        </div>
+
+        <div class="card raquetas">
+          <div class="card__img">
+            <img src="./assets/img/raqueta-head-speed-mp-2022.jpg">
+          </div>
+
+          <div class="card__content">
+            <span>Raqueta Head Speed MP 2022</span>
+            <span>$126.000</span>
+          </div>
+
+          <div class="card__buy">
+            <input type="number" value="1">
+            <button class="btn">
+              COMPRAR
+            </button>
+          </div>
+        </div>
+
+        <div class="card raquetas">
+          <div class="card__img">
+            <img src="./assets/img/raqueta-yonex-flame-98-2021.jpg">
+          </div>
+
+          <div class="card__content">
+            <span>
+              Raqueta Yonex Flame 98 2021</span>
+            <span>$116.000</span>
+          </div>
+
+          <div class="card__buy">
+            <input type="number" value="1">
+            <button class="btn">
+              COMPRAR
+            </button>
+          </div>
+        </div>
+
+        <div class="card bolsos">
+          <div class="card__img">
+            <img src="./assets/img/raquetero-babolat-aero-rh12.jpg">
+          </div>
+
+          <div class="card__content">
+            <span>Raquetero Babolat AERO RH12</span>
+            <span>$92.670</span>
+          </div>
+
+          <div class="card__buy">
+            <input type="number" value="1">
+            <button class="btn">
+              COMPRAR
+            </button>
+          </div>
+        </div>
+
+        <div class="card bolsos">
+          <div class="card__img">
+            <img src="./assets/img/rauetero-wilson-rf-rh12.jpg">
+          </div>
+
+          <div class="card__content">
+            <span>Raquetero Wilson RF RH12</span>
+            <span>$118.200</span>
+          </div>
+
+          <div class="card__buy">
+            <input type="number" value="1">
+            <button class="btn">
+              COMPRAR
+            </button>
+          </div>
+        </div>
+
+        <div class="card paletas">
+          <div class="card__img">
+            <img src="./assets/img/paleta-adidas-adipower-32.jpg">
+          </div>
+
+          <div class="card__content">
+            <span>Paleta Adidas Adipower 3.2</span>
+            <span>$217.800</span>
+          </div>
+
+          <div class="card__buy">
+            <input type="number" value="1">
+            <button class="btn">
+              COMPRAR
+            </button>
+          </div>
+        </div>
+
+        <div class="card paletas">
+          <div class="card__img">
+            <img src="./assets/img/paleta-tecnifibre-wall-breaker-375-.jpg">
+          </div>
+
+          <div class="card__content">
+            <span>Paleta Tecnifibre Wall Breaker 375</span>
+            <span>$144.300</span>
+          </div>
+
+          <div class="card__buy">
+            <input type="number" value="1">
+            <button class="btn">
+              COMPRAR
+            </button>
+          </div>
+        </div>
+
+        <div class="card paletas">
+          <div class="card__img">
+            <img src="./assets/img/paleta-head-zepyhr-pro-2022.jpg">
+          </div>
+
+          <div class="card__content">
+            <span>Paleta Head Zepyhr Pro 2022</span>
+            <span>$109.000</span>
+          </div>
+
+          <div class="card__buy">
+            <input type="number" value="1">
+            <button class="btn">
+              COMPRAR
+            </button>
+          </div>
+        </div>
+
+        <div class="card pelotas">
+          <div class="card__img">
+            <img src="./assets/img/balls-babolat-gold-.jpg">
+          </div>
+
+          <div class="card__content">
+            <span>
+              Balls Babolat Gold Tubo X 3</span>
+            <span>$4.400</span>
+          </div>
+
+          <div class="card__buy">
+            <input type="number" value="1">
+            <button class="btn">
+              COMPRAR
+            </button>
+          </div>
+        </div>
+
+        <div class="card pelotas">
+          <div class="card__img">
+            <img src="./assets/img/balls-head-tour-.jpg">
+          </div>
+
+          <div class="card__content">
+            <span>
+              Balls Head Tour</span>
+            <span>$5.700</span>
+          </div>
+
+          <div class="card__buy">
+            <input type="number" value="1">
+            <button class="btn">
+              COMPRAR
+            </button>
+          </div>
+        </div>
+
+        <div class="card pelotas">
+          <div class="card__img">
+            <img src="./assets/img/balls-dunlop-fort-all-court.jpg">
+          </div>
+
+          <div class="card__content">
+            <span>Balls Dunlop Fort All Court</span>
+            <span>$5.150</span>
+          </div>
+
+          <div class="card__buy">
+            <input type="number" value="1">
+            <button class="btn">
+              COMPRAR
+            </button>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section id="container-contact">
+      <div class="contact-title">
+        <h2>¿Tenés alguna consulta para hacernos?</h2>
+        <span>No dudes en escribirnos, nuestro equipo se contactará contigo lo antes posible.</span>
+      </div>
+
+      <form class="form-contact">
+        <input type="text" placeholder="Nombre completo" required>
+        <input type="text" placeholder="Número telefónico" required>
+        <input type="email" placeholder="Dirección de correo" required>
+        <textarea placeholder="Escribe tu mensaje..." required></textarea>
+        <button type="submit" class="btn-contact btn">ENVIAR</button>
+      </form>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <section class="footer-container">
+      <div class="footer-icons">
+        <a href="https://instagram.com" target="_blank">
+          <i class="fa-brands fa-instagram instagram"></i>
+        </a>
+        <a href="https://whatsapp.com" target="_blank">
+          <i class="fa-brands fa-whatsapp whatsapp"></i>
+        </a>
+        <a href="https://facebook.com" target="_blank">
+          <i class="fa-brands fa-facebook facebook"></i>
+        </a>
+      </div>
+      <p>&copy;Desarrollado por CTL Designs 2023</p>
+    </section>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/2a27fcfc26.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
