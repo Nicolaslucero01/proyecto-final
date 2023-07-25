@@ -25,6 +25,12 @@
   top: 0;
 }
 
+.container__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .img__logo {
   display: flex;
   justify-content: center;
@@ -121,6 +127,11 @@ input[type="radio"] {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 300ms;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  -ms-transition: all 300ms;
+  -o-transition: all 300ms;
 }
 .products__cards {
   display: flex;
@@ -133,12 +144,11 @@ input[type="radio"] {
 .card {
   display: flex;
   flex-direction: column;
-  width: 280px;
+  width: 255px;
   gap: 10px;
 }
 
 .card img {
-  height: 100%;
   width: 100%;
 }
 
@@ -168,6 +178,17 @@ input[type="radio"] {
   border: none;
   cursor: pointer;
   background-color: rgba(201, 198, 198, 0.959);
+  transition: all 300ms;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  -ms-transition: all 300ms;
+  -o-transition: all 300ms;
+}
+
+.btn:hover,
+.products__categories label:hover {
+  background-color: #669b26;
+  color: white;
 }
 
 /*==================== CONTACT ===========================*/
@@ -216,10 +237,16 @@ input[type="radio"] {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+  transition: all 300ms;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  -ms-transition: all 300ms;
+  -o-transition: all 300ms;
 }
 
 .form__contact input:focus,
 .form__contact textarea:focus {
+  background-color: rgba(201, 196, 196, 0.959);
   outline: none;
 }
 

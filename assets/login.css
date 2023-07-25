@@ -22,6 +22,12 @@
   top: 0;
 }
 
+.container__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .img__logo {
   display: flex;
   justify-content: center;
@@ -38,6 +44,7 @@
   text-decoration: none;
   font-weight: 600;
   font-size: 17px;
+  color: black;
 }
 
 .navbar__list li a:active,
@@ -68,9 +75,8 @@ main {
   gap: 1rem;
 }
 
-.form__login input,
-.form__login button {
-  padding: 0.4rem 1rem;
+.form__login input {
+  padding: 1rem;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -79,17 +85,39 @@ main {
   border: none;
   background-color: rgba(241, 237, 237, 0.959);
   width: 350px;
+  transition: all 300ms;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  -ms-transition: all 300ms;
+  -o-transition: all 300ms;
+}
+
+.form__login input:focus {
+  outline: none;
+  background-color: rgba(201, 196, 196, 0.959);
 }
 
 .form__login button {
   width: 300px;
+  padding: 0.6rem 1rem;
   border-radius: 0px;
+  border: none;
   background-color: rgba(179, 172, 172, 0.959);
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   -ms-border-radius: 0px;
   -o-border-radius: 0px;
   cursor: pointer;
+  transition: all 300ms;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  -ms-transition: all 300ms;
+  -o-transition: all 300ms;
+}
+
+.form__login button:hover {
+  background-color: #669b26;
+  color: white;
 }
 
 .form__anchor {
@@ -116,5 +144,9 @@ main {
 
   .form__anchor {
     flex-direction: column;
+  }
+
+  .container__logo h1 {
+    display: none;
   }
 }
