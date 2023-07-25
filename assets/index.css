@@ -31,6 +31,10 @@
   align-items: center;
 }
 
+.container__logo h1 {
+  font-size: 23px;
+}
+
 .img__logo {
   display: flex;
   justify-content: center;
@@ -98,7 +102,7 @@ main {
 
 #container__products {
   display: flex;
-  width: 80%;
+  width: 60%;
   flex-direction: column;
   gap: 5rem;
 }
@@ -144,12 +148,14 @@ input[type="radio"] {
 .card {
   display: flex;
   flex-direction: column;
-  width: 230px;
-  gap: 10px;
+  width: 260px;
+  gap: 12px;
+  align-items: center;
+  justify-self: center;
 }
 
-.card img {
-  width: 100%;
+.card h3 {
+  height: 50px;
 }
 
 .card__content {
@@ -201,13 +207,13 @@ input[type="radio"] {
   display: flex;
   width: 70%;
   gap: 2rem;
+  align-items: center;
 }
 
 .contact__title {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  width: 30%;
 }
 
 .contact__title h2,
@@ -224,10 +230,8 @@ input[type="radio"] {
 .form__contact {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 1rem;
   align-items: center;
-  width: 70%;
 }
 
 .form__contact input,
