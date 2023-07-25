@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&family=Poppins:wght@400;500;600;700;800&family=Work+Sans:wght@400;500;600;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Work Sans", sans-serif;
+  text-decoration: none;
+}
+
+#header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  margin: 0 auto;
+  padding: 0 10rem;
+  position: sticky;
+  background-color: white;
+  top: 0;
+}
+
+.img__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+
+.navbar__list {
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar__list li a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.navbar__list li a:active,
+.navbar__list li a:visited,
+.form__anchor a:visited {
+  color: black;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#container__form {
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+
+.form__login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+}
+
+.form__login input,
+.form__login button {
+  padding: 0.4rem 1rem;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border: none;
+  background-color: rgba(241, 237, 237, 0.959);
+  width: 350px;
+}
+
+.form__login button {
+  width: 300px;
+  border-radius: 0px;
+  background-color: rgba(179, 172, 172, 0.959);
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  cursor: pointer;
+}
+
+.form__anchor {
+  display: flex;
+  gap: 1rem;
+}
+
+@media (max-width: 700px) {
+  #header__container {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .navbar__list li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 500px) {
+  .form__login input,
+  .form__login button {
+    width: 100%;
+  }
+
+  .form__anchor {
+    flex-direction: column;
+  }
+}

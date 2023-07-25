@@ -6,6 +6,8 @@
   box-sizing: border-box;
   list-style-type: none;
   font-family: "Work Sans", sans-serif;
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
 }
 
 /*==================== HEADER ===========================*/
@@ -17,9 +19,9 @@
   width: 100%;
   height: 80px;
   margin: 0 auto;
+  padding: 0 10rem;
   position: sticky;
   background-color: white;
-  padding: 0 10rem;
   top: 0;
 }
 
@@ -39,6 +41,14 @@
   text-decoration: none;
   font-weight: 600;
   font-size: 17px;
+}
+
+.navbar__list li a:active {
+  color: black;
+}
+
+.navbar__list li a:visited {
+  color: black;
 }
 
 #menu-hamburguesa,
@@ -164,31 +174,31 @@ input[type="radio"] {
 
 /*==================== CONTACT ===========================*/
 
-#container-contact {
+#container__contact {
   display: flex;
   width: 70%;
   gap: 2rem;
 }
 
-.contact-title {
+.contact__title {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   width: 30%;
 }
 
-.contact-title h2,
-.contact-title span {
+.contact__title h2,
+.contact__title span {
   font-size: 35px;
   text-align: center;
 }
 
-.contact-title span {
+.contact__title span {
   font-size: 20px;
   color: gray;
 }
 
-.form-contact {
+.form__contact {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -197,8 +207,8 @@ input[type="radio"] {
   width: 70%;
 }
 
-.form-contact input,
-.form-contact textarea {
+.form__contact input,
+.form__contact textarea {
   width: 550px;
   padding: 1rem;
   border: none;
@@ -210,12 +220,17 @@ input[type="radio"] {
   -o-border-radius: 10px;
 }
 
-.form-contact textarea {
+.form__contact input:focus,
+.form__contact textarea:focus {
+  outline: none;
+}
+
+.form__contact textarea {
   height: 100px;
   resize: none;
 }
 
-.btn-contact {
+.btn__contact {
   width: 35%;
 }
 
