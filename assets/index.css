@@ -156,8 +156,12 @@ input[type="radio"] {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  font-size: 17px;
-  font-weight: 500;
+  font-size: 20px;
+}
+
+.card__content span {
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .card__buy {
