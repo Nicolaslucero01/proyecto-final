@@ -2,7 +2,6 @@
   #header__container {
     width: 100%;
     padding: 0 1rem;
-    
   }
 
   .navbar__list li a {
@@ -18,6 +17,19 @@
 
   .us__img img {
     max-width: 100%;
+  }
+
+  #container__products {
+    width: 80%;
+  }
+
+  .card:hover {
+    box-shadow: none;
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
   }
 
   #container__contact {
