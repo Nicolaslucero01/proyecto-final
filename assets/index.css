@@ -17,11 +17,12 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  background-color: white;
   height: 70px;
   margin: 0 auto;
-  padding: 0 10rem;
+  padding: 0 4rem;
   position: sticky;
-  background-color: white;
+  z-index: 2;
   top: 0;
 }
 
