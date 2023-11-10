@@ -21,11 +21,13 @@
     </div>
 
     <nav class="navbar__container">
-      <label for="menu-hamburguesa" class="menu__label">
-        <i class="fa-solid fa-bars"></i>
-      </label>
-      <input type="checkbox" id="menu-hamburguesa">
 
+      <div class="navbar__toggle" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      
       <ul class="navbar__list">
         <li><a href="#container__home">INICIO</a></li>
         <li><a href="#container__us">NOSOTROS</a></li>
@@ -58,291 +60,19 @@
 
     <!--------- PRODUCTS --------->
     <section id="container__products">
+      <h2 style="font-size: 50px;">Productos</h2>
       <div class="products__categories">
-        <div class="container-label">
-          <input type="radio" name="filtro" id="todos" checked="yes">
-          <label for="todos">Todos</label>
-        </div>
-        <div class="container-label">
-          <input type="radio" name="filtro" id="raquetas">
-          <label for="raquetas">Raquetas</label>
-        </div>
-        <div class="container-label">
-          <input type="radio" name="filtro" id="paletas">
-          <label for="paletas">Paletas</label>
-        </div>
-        <div class="container-label">
-          <input type="radio" name="filtro" id="bolsos">
-          <label for="bolsos">Bolsos</label>
-        </div>
-        <div class="container-label">
-          <input type="radio" name="filtro" id="pelotas">
-          <label for="pelotas">Pelotas</label>
-        </div>
+        <button class="category active">Todas</button>
+        <button class="category" data-category="Tenis">Tenis</button>
+        <button class="category" data-category="Padel">Padel</button>
+        <button class="category" data-category="Pelota Paleta">Pelota Paleta</button>
+        <button class="category" data-category="Accesorios">Accesorios</button>
       </div>
+      
 
-      <div class="products__cards">
-
-
-        <div class="card raquetas">
-          <div class="card__img">
-            <img src="./assets/img/418-raqueta-babolat-aero-tour.jpg">
-          </div>
-
-          <div class="card__content">
-            <h3>Raqueta Babolat Aero Tour</h3>
-            <span>$84.000</span>
-          </div>
-
-          <div class="card__buy">
-            <input type="number" value="1">
-            <button class="btn">
-              COMPRAR
-            </button>
-          </div>
-        </div>
-
-        <div class="card raquetas">
-          <div class="card__img">
-            <img src="./assets/img/raqueta-tecnifibre-tf-x1-300-.jpg">
-          </div>
-
-          <div class="card__content">
-            <h3>Raqueta Tecnifibre TF X1 300</h3>
-            <span>$117.000</span>
-          </div>
-
-          <div class="card__buy">
-            <input type="number" value="1">
-            <button class="btn">
-              COMPRAR
-            </button>
-          </div>
-        </div>
-
-        <div class="card raquetas">
-          <div class="card__img">
-            <img src="./assets/img/raqueta-head-speed-mp-2022.jpg">
-          </div>
-
-          <div class="card__content">
-            <h3>Raqueta Head Speed MP 2022</h3>
-            <span>$126.000</span>
-          </div>
-
-          <div class="card__buy">
-            <input type="number" value="1">
-            <button class="btn">
-              COMPRAR
-            </button>
-          </div>
-        </div>
-
-        <div class="card raquetas">
-          <div class="card__img">
-            <img src="./assets/img/raqueta-yonex-flame-98-2021.jpg">
-          </div>
-
-          <div class="card__content">
-            <h3>
-              Raqueta Yonex Flame 98 2021</h3>
-            <span>$116.000</span>
-          </div>
-
-          <div class="card__buy">
-            <input type="number" value="1">
-            <button class="btn">
-              COMPRAR
-            </button>
-          </div>
-        </div>
-
-        <div class="card bolsos">
-          <div class="card__img">
-            <img src="./assets/img/raquetero-babolat-aero-rh12.jpg">
-          </div>
-
-          <div class="card__content">
-            <h3>Raquetero Babolat AERO RH12</h3>
-            <span>$92.760</span>
-          </div>
-
-          <div class="card__buy">
-            <input type="number" value="1">
-            <button class="btn">
-              COMPRAR
-            </button>
-          </div>
-        </div>
-
-        <div class="card bolsos">
-          <div class="card__img">
-            <img src="./assets/img/rauetero-wilson-rf-rh12.jpg">
-          </div>
-
-          <div class="card__content">
-            <h3>Raquetero Wilson RF RH12</h3>
-            <span>$118.200</span>
-          </div>
-
-          <div class="card__buy">
-            <input type="number" value="1">
-            <button class="btn">
-              COMPRAR
-            </button>
-          </div>
-        </div>
-
-        <div class="card paletas">
-          <div class="card__img">
-            <img src="./assets/img/paleta-adidas-adipower-32.jpg">
-          </div>
-
-          <div class="card__content">
-            <h3>Paleta Adidas Adipower 3.2</h3>
-            <span>$217.800</span>
-          </div>
-
-          <div class="card__buy">
-            <input type="number" value="1">
-            <button class="btn">
-              COMPRAR
-            </button>
-          </div>
-        </div>
-
-        <div class="card paletas">
-          <div class="card__img">
-            <img src="./assets/img/paleta-tecnifibre-wall-breaker-375-.jpg">
-          </div>
-
-          <div class="card__content">
-            <h3>Paleta Tecnifibre Wall Breaker 375</h3>
-            <span>$144.300</span>
-          </div>
-
-          <div class="card__buy">
-            <input type="number" value="1">
-            <button class="btn">
-              COMPRAR
-            </button>
-          </div>
-        </div>
-
-        <div class="card paletas">
-          <div class="card__img">
-            <img src="./assets/img/paleta-head-zepyhr-pro-2022.jpg">
-          </div>
-
-          <div class="card__content">
-            <h3>Paleta Head Zepyhr Pro 2022</h3>
-            <span>$109.000</span>
-          </div>
-
-          <div class="card__buy">
-            <input type="number" value="1">
-            <button class="btn">
-              COMPRAR
-            </button>
-          </div>
-        </div>
-
-        <div class="card pelotas">
-          <div class="card__img">
-            <img src="./assets/img/balls-babolat-gold-.jpg">
-          </div>
-
-          <div class="card__content">
-            <h3>
-              Balls Babolat Gold Tubo X 3</h3>
-            <span>$4.400</span>
-          </div>
-
-          <div class="card__buy">
-            <input type="number" value="1">
-            <button class="btn">
-              COMPRAR
-            </button>
-          </div>
-        </div>
-
-        <div class="card pelotas">
-          <div class="card__img">
-            <img src="./assets/img/balls-head-tour-.jpg">
-          </div>
-
-          <div class="card__content">
-            <h3>
-              Balls Head Tour X3</h3>
-            <span>$5.700</span>
-          </div>
-
-          <div class="card__buy">
-            <input type="number" value="1">
-            <button class="btn">
-              COMPRAR
-            </button>
-          </div>
-        </div>
-
-        <div class="card pelotas">
-          <div class="card__img">
-            <img src="./assets/img/balls-dunlop-fort-all-court.jpg">
-          </div>
-
-          <div class="card__content">
-            <h3 class="">Balls Dunlop Fort All Court X3</h3>
-            <span>$5.150</span>
-          </div>
-
-          <div class="card__buy">
-            <input type="number" value="1">
-            <button class="btn">
-              COMPRAR
-            </button>
-          </div>
-
-        </div>
-
-        <div class="card pelotas">
-          <div class="card__img">
-            <img src="./assets/img/rafapop.jpg">
-          </div>
-
-          <div class="card__content">
-            <h3>Rafael Nadal Funko Pop</h3>
-            <span>$18.250</span>
-          </div>
-
-          <div class="card__buy">
-            <input type="number" value="1">
-            <button class="btn">
-              COMPRAR
-            </button>
-          </div>
-
-        </div>
-
-        <div class="card pelotas">
-          <div class="card__img">
-            <img src="./assets/img/federerpop.jpg">
-          </div>
-
-          <div class="card__content">
-            <h3>Roger Federer Funko Pop</h3>
-            <span>$18.250</span>
-          </div>
-
-          <div class="card__buy">
-            <input type="number" value="1">
-            <button class="btn">
-              COMPRAR
-            </button>
-          </div>
-
-        </div>
+      <div class="products__cards">                 
       </div>
-      </div>
+      <button class="btn__loaded">Ver más</button>
     </section>
 
     <section id="container__contact">
@@ -351,13 +81,13 @@
         <span>No dudes en escribirnos, nuestro equipo se contactará contigo lo antes posible.</span>
       </div>
 
-      <form class="form__contact">
-        <input type="text" placeholder="Nombre completo" required>
-        <input type="text" placeholder="Número telefónico" required>
-        <input type="email" placeholder="Dirección de correo" required>
-        <textarea placeholder="Escribe tu mensaje..." required></textarea>
+      <form class="form__contact" id="contactForm">
+        <input type="text" id="nombre" placeholder="Nombre completo" required>
+        <input type="text" id="telefono" placeholder="Número telefónico" required>
+        <input type="email" id="correo" placeholder="Dirección de correo" required>
+        <textarea id="mensaje" placeholder="Escribe tu mensaje..." required></textarea>
         <button type="submit" class="btn__contact btn">ENVIAR</button>
-      </form>
+    </form>
     </section>
   </main>
 
@@ -379,6 +109,11 @@
   </footer>
 
   <script src="https://kit.fontawesome.com/2a27fcfc26.js" crossorigin="anonymous"></script>
+  <script src="./assets/scripts/products.js"></script>
+  <script src="./assets/scripts/validator.js"></script>
+  <script src="./assets/scripts/index.js"></script>
+
+
 </body>
 
 </html>
