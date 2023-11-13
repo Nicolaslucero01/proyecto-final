@@ -1,14 +1,11 @@
-const productsContainer = document.querySelector('.products__cards')
-const showMoreBtn = document.querySelector('.btn__loaded')
-const categoriesList = document.querySelectorAll('.category')
-const categoriesContainer = document.querySelector('.products__categories')
-
-
-
+const productsContainer = document.querySelector(".products__cards");
+const showMoreBtn = document.querySelector(".btn__loaded");
+const categoriesList = document.querySelectorAll(".category");
+const categoriesContainer = document.querySelector(".products__categories");
 
 const createProductTemplate = (product) => {
-    const { id, nombre, imagen, precio } = product;
-    return `<div class="card">
+  const { id, nombre, imagen, precio } = product;
+  return `<div class="card">
     <div class="card__img">
       <img src="${imagen}" alt="${nombre}">
     </div>
@@ -24,16 +21,15 @@ const createProductTemplate = (product) => {
       </button>
     </div>
   </div>`;
-  };
+};
 
-
-renderProducts = (productList) =>{
-    productsContainer.innerHTML += productList.map(createProductTemplate).join("");
-}
-
+renderProducts = (productList) => {
+  productsContainer.innerHTML += productList
+    .map(createProductTemplate)
+    .join("");
+};
 
 //Paginación
-
 
 const isLastIndexOf = () => {
   return appState.currentProductsIndex === appState.productsLimit - 1;
@@ -106,25 +102,19 @@ const isInactiveFilterBtn = (element) => {
   );
 };
 
-
-
-
-
 //Menú Hamburguesa
 
 function toggleMenu() {
-  var navbarList = document.querySelector('.navbar__list');
-  navbarList.classList.toggle('show');
+  var navbarList = document.querySelector(".navbar__list");
+  navbarList.classList.toggle("show");
 }
-
 
 //Init
 
-const init = () =>{
+const init = () => {
   renderProducts(appState.products[0]);
   showMoreBtn.addEventListener("click", showMoreProducts);
-  categoriesContainer.addEventListener("click", applyFilter)
+  categoriesContainer.addEventListener("click", applyFilter);
 };
 
-
-init()
+init();
