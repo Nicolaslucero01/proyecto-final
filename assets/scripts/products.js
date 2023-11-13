@@ -89,10 +89,10 @@ const productsData = [
 
   {
     id: 12,
-    nombre: "Raquetero Babolat AERO RH12",
-    precio: "92.760",
-    imagen: "./assets/img/BabolatAerorh.jpg",
-    category: "Tenis",
+    nombre: "Balls Head Tour X3",
+    precio: "5.700",
+    imagen: "./assets/img/babolatbagrafa.jpg",
+    category: "Pelotas",
   },
 
   {
