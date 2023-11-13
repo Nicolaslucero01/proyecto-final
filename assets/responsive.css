@@ -23,18 +23,8 @@
     max-width: 100%;
   }
 
-  #container__products {
-    width: 80%;
-  }
+ 
 
-  .card:hover {
-    box-shadow: none;
-    transform: none;
-    -webkit-transform: none;
-    -moz-transform: none;
-    -ms-transform: none;
-    -o-transform: none;
-  }
 
   #container__contact {
     flex-direction: column;
@@ -49,12 +39,25 @@
 }
 
 @media (max-width: 800px) {
-  main {
+#page__body {
     gap: 6rem;
   }
-  .card {
-    width: 350px;
+
+  #container__products {
+    width: 96%;
   }
+
+
+  .card:hover {
+    box-shadow: none;
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+  }
+
+ 
 
   .navbar__list {
     display: none;

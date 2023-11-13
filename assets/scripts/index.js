@@ -7,7 +7,7 @@ const categoriesContainer = document.querySelector('.products__categories')
 
 
 const createProductTemplate = (product) => {
-    const { id, nombre, imagen } = product;
+    const { id, nombre, imagen, precio } = product;
     return `<div class="card">
     <div class="card__img">
       <img src="${imagen}" alt="${nombre}">
@@ -15,11 +15,10 @@ const createProductTemplate = (product) => {
 
     <div class="card__content">
       <h3>${nombre}</h3>
-      <span>$117.000</span>
+      <span>$${precio}</span>
     </div>
 
     <div class="card__buy">
-      <input type="number" value="1">
       <button class="btn">
         COMPRAR
       </button>
@@ -53,11 +52,11 @@ const showMoreProducts = () => {
 };
 
 const setShowMoreVisibility = () => {
-  if (!appState.activeFilter) {
+  if (appState.activeFilter) {
+    showMoreBtn.classList.add("hidden");
+  } else {
     showMoreBtn.classList.remove("hidden");
   }
-
-  showMoreBtn.classList.add("hidden");
 };
 
 /* --------- Logica filtros ---------- */
