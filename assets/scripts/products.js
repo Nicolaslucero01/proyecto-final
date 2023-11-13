@@ -89,10 +89,10 @@ const productsData = [
 
   {
     id: 12,
-    nombre: "Balls Head Tour X3",
-    precio: "5.700",
+    nombre: "Raquetero Babolat Aero Rafa",
+    precio: "162.999",
     imagen: "./assets/img/babolatbagrafa.jpg",
-    category: "Pelotas",
+    category: "Bolsos",
   },
 
   {
