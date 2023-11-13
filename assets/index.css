@@ -182,7 +182,6 @@
   flex-wrap: wrap;
   gap: 4rem;
   justify-content: center;
-  align-items: center;
 
   
 }
@@ -211,7 +210,6 @@
 }
 
 .card__img img {
-  object-fit: cover;
   height: 255px;
   width: 255px;
 }
