@@ -35,7 +35,7 @@ const productsData = [
     id: 5,
     nombre: "Camiseta Nike Court Dri-FIT Adv Rafa",
     precio: "56.999",
-    imagen: "./assets/img/camisetaNikeAdvRafa.jpg",
+    imagen: "./assets/img/nikerafaadv.jpg",
     category: "Indumentaria",
   },
 
@@ -91,7 +91,7 @@ const productsData = [
     id: 12,
     nombre: "Raquetero Babolat AERO RH12",
     precio: "92.760",
-    imagen: "./assets/img/BabolatAeroRH12.jpg",
+    imagen: "./assets/img/BabolatAerorh.jpg",
     category: "Tenis",
   },
 
@@ -115,7 +115,7 @@ const productsData = [
     id: 15,
     nombre: "Paleta Dabber Titanium Carbono Kevlar 14mm",
     precio: "36.999",
-    imagen: "./assets/img/dabberkevlar.jpg",
+    imagen: "./assets/img/dabbercarbonokevlar.jpg",
     category: "Pelota Paleta",
   },
 
@@ -163,7 +163,7 @@ const productsData = [
     id: 21,
     nombre: "Raqueta de Tenis Boca Juniors Ultra 100 V3",
     precio: "97.999",
-    imagen: "./assets/img/wilsonBoca.jpg",
+    imagen: "./assets/img/wilsonbocajr.jpg",
     category: "Tenis",
   },
 
