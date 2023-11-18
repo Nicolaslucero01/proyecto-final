@@ -62,23 +62,25 @@
   .navbar__list {
     position: absolute;
     top: 65px;
-    left: 5%;
-    right: 5%;
-    width: 90%;
+    left: 0%;
+    right: 0%; 
+    width: 100%;
     flex-direction: column;
-    background-color: red;
-    border: 2px solid green;
+    background-color: rgb(82, 73, 73);
     border-top: 0px;
-    border-radius: 0px 0px 15px 15px;
-    align-items: flex-start;
+    align-items: center;
     padding: 45px 30px;
     gap: 25px;
     z-index: 2;
     display: none;
   }
 
-  .navbar__list a {
-    font-size: 1.2rem;
+  .navbar__list li a {
+    font-size: 1rem;
+  }
+
+  .navbar__list li a::after{
+    visibility: hidden;
   }
 
 
@@ -118,5 +120,28 @@
 
   .us__img img {
     width: 100%;
+  }
+}
+
+
+@media(max-width: 400px){
+  .container__logo h1{
+    display: none;
+  }
+
+  .cart{
+    width: 320px;
+  }
+
+  .cart-item{
+    gap: 2.5rem;
+  }
+
+  .cart-item img {
+    display: none;
+  }
+
+  .item-title{
+    width: 150px;
   }
 }

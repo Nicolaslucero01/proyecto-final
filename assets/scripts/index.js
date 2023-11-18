@@ -136,18 +136,6 @@ const toggleMenu = () => {
   }
 };
 
-const closeOnScroll = () => {
-  if (
-    barsMenu.classList.contains("open-menu") &&
-    cartMenu.classList.contains("open-menu")
-  ) {
-    console.log("asd");
-    return;
-  }
-  barsMenu.classList.remove("open-menu");
-  cartMenu.classList.remove("open-cart");
-};
-
 const createCartProductTemplate = (cartProduct) => {
   const { price, id, image, name, quantity } = cartProduct;
 
@@ -313,7 +301,6 @@ const init = () => {
 
   cartBtn.addEventListener("click", toggleCart);
   menuBtn.addEventListener("click", toggleMenu);
-  window.addEventListener("scroll", closeOnScroll);
 
   productsContainer.addEventListener("click", addProduct);
   productsCart.addEventListener("click", handleQuantity);

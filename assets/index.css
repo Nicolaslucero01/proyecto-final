@@ -50,7 +50,6 @@
 .navbar__list li a {
   text-decoration: none;
   font-weight: 600;
-  color: black;
 }
 
 .navbar__list li a:active,
@@ -105,7 +104,7 @@
   border-radius: 10px;
   font-size: 18px;
   margin-right: 1rem;
-  color: white;
+  color: black;
   cursor: pointer;
   position: relative;
 }
@@ -131,9 +130,9 @@
 
 .cart {
   position: absolute;
-  top: 65px;
+  top: 70px;
   right: 0;
-  padding: 50px 30px;
+  padding: 30px 15px;
   background: rgb(82, 73, 73);
   display: flex;
   flex-direction: column;
@@ -141,7 +140,7 @@
   height: calc(100vh - 65px);
   overflow-y: scroll;
   z-index: 2;
-  min-width: 375px;
+  width: 375px;
   transform: translate(200%);
   transition: all 0.5s cubic-bezier(0.92, 0.01, 0.35, 0.99);
   
@@ -172,6 +171,7 @@
   padding: 20px;
   border: 1px solid white;
   border-radius: 10px;
+  height: 140px;
 }
 
 .cart-item img {
@@ -184,13 +184,13 @@
   flex-direction: column;
   width: 120px;
   justify-content: flex-start;
-  align-items: fle;
 }
 
 .item-title {
   color: white;
   font-weight: 600;
   font-size: 14px;
+  width: 100px;
 }
 
 .item-bid {
@@ -446,6 +446,7 @@
   padding: 0.5rem;
   border: none;
   cursor: pointer;
+  color: white;
   background-color: #669b26;  
 }
 
@@ -455,6 +456,8 @@
   cursor: not-allowed;
   border: none;
 }
+
+
 
 .add-modal {
   padding: 15px 0px;
