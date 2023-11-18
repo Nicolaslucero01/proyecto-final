@@ -33,7 +33,7 @@ const createProductTemplate = (product) => {
 
     <div class="card__buy">
       <button class="btn" data-id='${id}' data-name="${nombre}" data-image="${imagen}" data-price="${precio}">
-        COMPRAR
+        Agregar al carro
       </button>
     </div>
   </div>`;
