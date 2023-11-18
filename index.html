@@ -19,23 +19,46 @@
       <img src="./assets/img/img_logo.png" class="img__logo">
       <h1>ACE Store</h1>
     </div>
-
-    <nav class="navbar__container">
-
-      <div class="navbar__toggle" onclick="toggleMenu()">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
+    <nav class="navcart__container">
+      <div class="navbar__container"> 
+        <div class="menu-label">
+          <img src="./assets/img/menu.png" alt="" class="menu-icon" />
+        </div>      
+        <ul class="navbar__list">
+          <li><a href="#container__home">INICIO</a></li>
+          <li><a href="#container__us">NOSOTROS</a></li>
+          <li><a href="#container__products">PRODUCTOS</a></li>
+          <li><a href="#container__contact">CONTACTO</a></li>
+          <li><a href="./login.html">INICIAR SESION</a></li>
+        </ul>          
+        
       </div>
-      
-      <ul class="navbar__list">
-        <li><a href="#container__home">INICIO</a></li>
-        <li><a href="#container__us">NOSOTROS</a></li>
-        <li><a href="#container__products">PRODUCTOS</a></li>
-        <li><a href="#container__contact">CONTACTO</a></li>
-        <li><a href="./login.html">INICIAR SESION</a></li>
-      </ul>
+  
+      <div class="cart-label">
+        <i class="fa-solid fa-cart-shopping cart-icon">
+          <div class="cart-bubble">0</div>
+        </i>
+      </div>
+  
+      <div class="cart">
+        <h2>Tu carrito:</h2>
+  
+        <div class="cart-container"></div>
+  
+        <span class="divider"></span>
+  
+        <div class="cart-total">
+          <p>Total:</p>
+          <span class="total"></span>
+        </div>
+        <button class="btnCart btn-buy">Comprar</button>
+        <button class="btnCart btn-delete">Vaciar carrito</button>
+      </div>
     </nav>
+
+    
+
+    
   </header>
 
   <main id="page__body">
@@ -109,6 +132,7 @@
       <p>&copy;Desarrollado por CTL Designs 2023</p>
     </section>
   </footer>
+  <div class="add-modal">asd</div>
 
   <script src="https://kit.fontawesome.com/2a27fcfc26.js" crossorigin="anonymous"></script>
   <script src="./assets/scripts/products.js"></script>
