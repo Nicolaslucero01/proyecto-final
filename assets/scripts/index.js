@@ -19,6 +19,15 @@ const saveCart = () => {
   localStorage.setItem("cart", JSON.stringify(cart));
 };
 
+const formatPrice = (price) => {
+  // Verificar si el precio tiene centavos
+  const hasCents = price % 1 !== 0;
+
+  return (hasCents ? price.toFixed(2) : price.toString()) // Formatea con o sin decimales
+    .replace(".", ",") // Cambia el punto por una coma para los decimales
+    .replace(/\B(?=(\d{3})+(?!\d))/g, "."); // Añade puntos para los miles
+};
+
 const createProductTemplate = (product) => {
   const { id, nombre, imagen, precio } = product;
   return `<div class="card">
@@ -28,12 +37,12 @@ const createProductTemplate = (product) => {
 
     <div class="card__content">
       <h3>${nombre}</h3>
-      <span>$${precio}</span>
+      <span>$${formatPrice(precio)}</span>
     </div>
 
     <div class="card__buy">
       <button class="btn" data-id='${id}' data-name="${nombre}" data-image="${imagen}" data-price="${precio}">
-        Agregar al carro
+        Agregar al carrito
       </button>
     </div>
   </div>`;
@@ -144,7 +153,7 @@ const createCartProductTemplate = (cartProduct) => {
             <img src="${image}" alt="${name}" />
             <div class="item-info">
               <h3 class="item-title">${name}</h3>
-              <span class="item-price">$${price}</span>
+              <span class="item-price">$${formatPrice(price)}</span>
             </div>
             <div class="item-handler">
               <span class="quantity-handler down" data-id=${id}>-</span>
@@ -165,9 +174,13 @@ const getCartTotal = () => {
   return cart.reduce((acc, cur) => acc + Number(cur.price) * cur.quantity, 0);
 };
 
-const showCartTotal = () => {
-  total.innerHTML = `$${getCartTotal().toFixed(3)}`;
-};
+// const showCartTotal = () => {
+//   const totalAmount = getCartTotal();
+//   const formatedTotal = totalAmount.toLocaleString("es-AR", {
+//     style: "decimal",
+//   });
+//   total.innerHTML = `$${formatedTotal}`;
+// };
 
 const renderCartBuble = () => {
   cartBubble.textContent = cart.reduce((acc, cur) => acc + cur.quantity, 0);
@@ -181,12 +194,23 @@ const disableBtn = (btn) => {
   }
 };
 
+const saveCartTotalInLocalStorage = () => {
+  const totalAmount = getCartTotal();
+  localStorage.setItem("cartTotal", totalAmount.toString());
+};
+
+const showCartTotal = () => {
+  const cartTotal = localStorage.getItem("cartTotal");
+  total.innerHTML = `$${formatPrice(cartTotal)}`;
+};
+
 //Funcion para actualizar el carro
 const updateCartState = () => {
   saveCart();
+  saveCartTotalInLocalStorage();
   renderCart();
-  showCartTotal();
   renderCartBuble();
+  showCartTotal();
   disableBtn(buyBtn);
   disableBtn(deleteBtn);
 };
@@ -305,7 +329,9 @@ const init = () => {
   productsContainer.addEventListener("click", addProduct);
   productsCart.addEventListener("click", handleQuantity);
   document.addEventListener("DOMContentLoaded", renderCart);
-
+  document.addEventListener("DOMContentLoaded", (event) => {
+    showCartTotal();
+  });
   buyBtn.addEventListener("click", completeBuy);
   deleteBtn.addEventListener("click", deleteCart);
 

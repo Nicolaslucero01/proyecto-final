@@ -130,10 +130,10 @@
 
 .cart {
   position: absolute;
-  top: 70px;
+  top: 75px;
   right: 0;
   padding: 30px 15px;
-  background: rgb(82, 73, 73);
+  background: rgb(31, 27, 27);
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -221,17 +221,17 @@
   align-items: center;
   padding: 2px 8px;
   border-radius: 5px;
-  color: var(--text-white);
   font-weight: 400;
+  width: 25px;
 }
 
 .item-quantity {
-  color: gray;
+  color: rgb(216, 206, 206);
 }
 
 .up, .down {
   cursor: pointer;
-  background-color: gray;
+  background-color: rgb(216, 206, 206);
   transition: all 300ms ;
 }
 
