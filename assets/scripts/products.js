@@ -9,11 +9,12 @@ const productsData = [
 
   {
     id: 2,
-    nombre: "Balls Babolat Gold Tubo X 3",
-    precio: 4400,
-    imagen: "./assets/img/BabolatGoldX3.jpg",
-    category: "Pelotas",
+    nombre: "Paleta Saquefort Fede Fernandez Carbono Kevlar 12mm",
+    precio: 52999,
+    imagen: "./assets/img/saquefortFede12mm.jpg",
+    category: "Pelota Paleta",
   },
+ 
 
   {
     id: 3,
@@ -31,14 +32,20 @@ const productsData = [
     category: "Pelota Paleta",
   },
 
+ 
+
+  
+
   {
     id: 5,
-    nombre: "Camiseta Nike Court Dri-FIT Adv Rafa",
-    precio: 56999,
-    imagen: "./assets/img/nikerafaadv.jpg",
-    category: "Indumentaria",
+    nombre: "Paleta Guastavino Stone Full Carbono 12mm",
+    precio: 43999,
+    imagen: "./assets/img/guastavinoStone12mm.jpg",
+    category: "Pelota Paleta",
   },
 
+
+ 
   {
     id: 6,
     nombre: "Raqueta Yonex Flame 98 2021",
@@ -105,7 +112,7 @@ const productsData = [
 
   {
     id: 14,
-    nombre: "Paleta Vasquito R4",
+    nombre: "Paleta Vasquito R4 Full Carbono",
     precio: 34500,
     imagen: "./assets/img/vasquitor4.jpg",
     category: "Pelota Paleta",
@@ -185,27 +192,96 @@ const productsData = [
 
   {
     id: 24,
-    nombre: "Polo de hombre Lacoste Tennis × Novak Djokovic estampado",
-    precio: 49999,
-    imagen: "./assets/img/lacosteNovakBlue.jpg",
-    category: "Indumentaria",
+    nombre: "Paleta Saquefort Fede Fernandez Carbono Kevlar 15mm",
+    precio: 52999,
+    imagen: "./assets/img/saquefortFede15mm.jpg",
+    category: "Pelota Paleta",
   },
+
+
 
   {
     id: 25,
-    nombre: "Zapatiilas Court FF 3 Novak Clay",
-    precio: 79999,
-    imagen: "./assets/img/zapatillasNovakClayRed.jpg",
-    category: "Indumentaria",
-  },
-
-  {
-    id: 26,
     nombre: "Raqueta Tecnifibre TF X1 300",
     precio: 117000,
     imagen: "./assets/img/TFX1300.jpg",
     category: "Tenis",
   },
+
+  {
+    id: 26,
+    nombre: "Balls Babolat Gold Tubo X 3",
+    precio: 4400,
+    imagen: "./assets/img/BabolatGoldX3.jpg",
+    category: "Pelotas",
+  },
+
+  {
+    id: 27,
+    nombre: "Paleta Vasquito A10 Full Carbono 15mm",
+    precio: 4400,
+    imagen: "./assets/img/vasquitoA10.jpg",
+    category: "Pelota Paleta",
+  },
+
+  {
+    id: 28,
+    nombre: "Protector Ocular Guastavino",
+    precio: 7999,
+    imagen: "./assets/img/protectoresGuastavino.jpg",
+    category: "Accesorios",
+  },
+
+  {
+    id: 29,
+    nombre: "Protector Ocular Dabber",
+    precio: 7999,
+    imagen: "./assets/img/protectoresDabber.jpg",
+    category: "Accesorios",
+  },
+
+  {
+    id: 30,
+    nombre: "Paleta Guastavino Toro Carbono",
+    precio: 89999,
+    imagen: "./assets/img/guastavinoToro.jpg",
+    category: "Padel",
+  },
+
+  {
+    id: 31,
+    nombre: "Paleta Guastavino Puma Carbono",
+    precio: 71999,
+    imagen: "./assets/img/guastavinoPuma.jpg",
+    category: "Padel",
+  },
+
+  {
+    id: 32,
+    nombre: "Paleta Guastavino Scorpio",
+    precio: 54999,
+    imagen: "./assets/img/guastavinoScorpio.jpg",
+    category: "Padel",
+  },
+
+  {
+    id: 33,
+    nombre: "Paleta Guastavino Cobra Carbono",
+    precio: 114999,
+    imagen: "./assets/img/guastavinoCobra.jpg",
+    category: "Padel",
+  },
+
+
+
+
+
+
+  
+
+  
+
+
 ];
 
 const DivideProductsInParts = (size) => {

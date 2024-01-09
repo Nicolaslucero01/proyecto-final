@@ -354,17 +354,15 @@
 .card {
   display: flex;
   flex-direction: column;
-  width: 265px;
+  width: 257px;
   gap: 12px;
-  height: 430px;
+  height: 410px;
   justify-self: center;
-  padding: 1rem 0.5rem;
   transition: all 300ms;
   -webkit-transition: all 300ms;
   -moz-transition: all 300ms;
   -ms-transition: all 300ms;
   -o-transition: all 300ms;
-  cursor: pointer;
   border: 1px solid rgb(223, 218, 218);
   border-radius: 10px;
 }
@@ -374,9 +372,17 @@
   transform: scale(1.05);
 }
 
+
+
+.card__img {
+  cursor: pointer;
+}
+
 .card__img img {
-  height: 255px;
-  width: 255px;
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+  
+
 }
 
 .card h3 {
@@ -390,6 +396,7 @@
   flex-direction: column;
   gap: 1rem;
   font-size: 20px;
+  padding: 0 .5rem;
 }
 
 .card__content span {
@@ -398,8 +405,7 @@
 }
 
 .card__buy {
-  display: flex;
-  gap: 1rem;
+  padding: 0 .5rem;
 }
 
 .card__buy input {
